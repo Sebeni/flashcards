@@ -17,6 +17,25 @@ body {
     margin-top: 10px;
     padding: 20px;
     border-radius: 10px;
+    width: fit-content;
+ 
+}
+
+.card-image {
+    height: 150px;
+    max-height: 150px;
+    width: 150px;
+    min-width: 150px;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.card-image img{
+    height: 150px;
+    max-height: 150px;
+    width: 150px;
+    min-width: 150px;
 }
 
 .card-title, .card-answer {
@@ -34,6 +53,11 @@ body {
     color: #0070bb;
 }
 
+.card-button:hover {
+    color: white;
+    background: #0070bb;
+}
+
 .card-answer {
     opacity: 0;
 }
@@ -45,4 +69,15 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+#card-form label, #card-form input{
+    padding: 5px;
+    margin: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+}
+
+.container .card:nth-of-type(1) {
+    display: none;
 }

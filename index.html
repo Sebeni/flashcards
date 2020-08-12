@@ -9,31 +9,49 @@
 <body>
     <div class="container">
         <div class="card">
-            <div><img src="images/apple.png" alt="apple"></div>
+            <div class="card-image"><img></div>
+            <div class="card-title">English</div>
+            <button class="card-button">Show</button>
+            <div class="card-answer">Spanish</div>
+        </div>
+        <div class="card">
+            <div class="card-image"><img src="images/apple.png" alt="apple"></div>
             <div class="card-title">Apple</div>
             <button class="card-button">Show</button>
             <div class="card-answer">la manzana</div>
         </div>
         <div class="card">
-            <div><img src="images/dog.png" alt="dog"></div>
+            <div class="card-image"><img src="images/dog.png" alt="dog"></div>
             <div class="card-title">Dog</div>
             <button class="card-button">Show</button>
             <div class="card-answer">el perro</div>
         </div>
         <div class="card">
-            <div><img src="images/chair.png" alt="chair"></div>
+            <div class="card-image"><img src="images/chair.png" alt="chair"></div>
             <div class="card-title">Chair</div>
             <button class="card-button">Show</button>
             <div class="card-answer">la silla</div>
         </div>
         <div class="card">
-            <div><img src="images/city.png" alt="city"></div>
+            <div class="card-image"><img src="images/city.png" alt="city"></div>
             <div class="card-title">City</div>
             <button class="card-button">Show</button>
             <div class="card-answer unselectable">la ciudad</div>
         </div>
-        
+        <div class="card" id="form-container">
+            <p>Add new flash card:</p>
+            <form id="card-form">
+                <label for="eng">Word in English:</label>
+                <input type="text" id="eng" placeholder="english" required>
+                <label for="esp">Spanish translation:</label>
+                <input type="text" id="esp" placeholder="spanish" required>
+                <label for="pic">Picture url*</label>
+                <input type="text" id="pic" placeholder="optional">
+                <input type="submit" value="Add flashcard">
+            </form>
+        </div>
     </div>
+    
 
     <script src="script.js"></script>
 </body>
